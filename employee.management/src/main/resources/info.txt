@@ -1,0 +1,27 @@
+Create User in oracle and database in mysql
+---- User creation in Oracle
+CREATE USER employee IDENTIFIED BY employee;
+GRANT CONNECT, RESOURCE, DBA TO employee;
+GRANT UNLIMITED TABLESPACE TO employee;
+
+
+---- Create a user and database in mysql
+- Create database
+CREATE DATABASE  IF NOT EXISTS EMPLOYEE_DATABASE;
+USE EMPLOYEE_DATABASE;
+
+CREATE USER 'employee' IDENTIFIED BY 'employee';
+GRANT ALL PRIVILEGES ON EMPLOYEE_DATABASE.* TO 'employee'@'localhost';
+
+--If you failed to grant on localhost, you have to create the user like this
+
+CREATE USER 'employee'@'localhost' IDENTIFIED WITH mysql_native_password BY 'employee';
+GRANT ALL PRIVILEGES ON EMPLOYEE_DATABASE.* employee'@'localhost';
+or
+GRANT ALL PRIVILEGES ON EMPLOYEE_DATABASE.* TO 'employee'@'localhost';
+
+
+---- Connect to the user using command prompt
+
+mysql -u employee -p
+employee

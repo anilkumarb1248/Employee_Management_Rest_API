@@ -1,0 +1,22 @@
+[
+  {
+    "departmentId":10,
+    "departmentName":"IT"
+  },
+  {
+    "departmentId":20,
+    "departmentName":"HR"
+  },
+  {
+    "departmentId":30,
+    "departmentName":"Operations"
+  },
+  {
+    "departmentId":40,
+    "departmentName":"Marketing"
+  },
+  {
+    "departmentId":50,
+    "departmentName":"Finance"
+  }
+]

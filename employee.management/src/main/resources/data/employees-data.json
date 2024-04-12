@@ -1,0 +1,524 @@
+[
+  {
+    "userName": "ammab",
+    "firstName": "Kethamma",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Ellaiah",
+    "motherName": "Odemma",
+    "guardianName": "",
+    "role": "CEO",
+    "salary": 90000,
+    "dob": "1970-01-01T00:00:00",
+    "gender": "FEMALE",
+    "mobileNumber": "123456789",
+    "homeTelephone": "986574123",
+    "email": "ammab@bakorg.com",
+    "personalEmail": "ammab@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Iaiah",
+    "departmentId": 10,
+    "addresses": [
+      {
+        "houseNumber": "12345",
+        "street": "YRP",
+        "city": "BPL",
+        "state": "Telangana",
+        "pinCode": "123456"
+      }
+    ]
+  },
+  {
+    "userName": "anilb",
+    "firstName": "Anil",
+    "middleName": "Kumar",
+    "lastName": "Bandari",
+    "fatherName": "Ilaiah",
+    "motherName": "Kethamma",
+    "guardianName": "Raju",
+    "role": "DELIVERY_MANAGER",
+    "salary": 70000,
+    "dob": "1990-05-11T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "123456789",
+    "homeTelephone": "986574123",
+    "email": "anilb@bakorg.com",
+    "personalEmail": "kumar@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Manu",
+    "departmentId": 10,
+    "addresses": [
+      {
+        "houseNumber": "12345",
+        "street": "BHEL",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pinCode": "123456"
+      }
+    ]
+  },
+  {
+    "userName": "anushab",
+    "firstName": "Anusha",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Rajaiah",
+    "motherName": "Bhagya",
+    "guardianName": "Anil",
+    "role": "PRODUCT_MANAGER",
+    "salary": 80000,
+    "dob": "1998-08-15T00:00:00",
+    "gender": "FEMALE",
+    "mobileNumber": "95643187",
+    "homeTelephone": "615779431",
+    "email": "anushab@bakorg.com",
+    "personalEmail": "manu@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Anil",
+    "departmentId": 10,
+    "addresses": [
+      {
+        "houseNumber": "12345",
+        "street": "BHEL",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pinCode": "123456"
+      }
+    ]
+  },
+  {
+    "userName": "hithikshab",
+    "firstName": "Hithiksha",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Anil",
+    "motherName": "Anusha",
+    "guardianName": "Chinnu",
+    "role": "CEO",
+    "salary": 90000,
+    "dob": "2020-11-23T00:00:00",
+    "gender": "FEMALE",
+    "mobileNumber": "465481547",
+    "homeTelephone": "34654684",
+    "email": "hithikshab@bakorg.com",
+    "personalEmail": "ikshi@gmail.com",
+    "maritalStatus": "UNMARRIED",
+    "spouseName": "",
+    "departmentId": 10,
+    "addresses": [
+      {
+        "houseNumber": "12345",
+        "street": "BHEL",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pinCode": "123456"
+      }
+    ]
+  },
+  {
+    "userName": "sreethanb",
+    "firstName": "Sreethan",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Anil",
+    "motherName": "Anusha",
+    "guardianName": "Chinnu",
+    "role": "CEO",
+    "salary": 90000,
+    "dob": "2022-04-19T00:00:00",
+    "gender": "FEMALE",
+    "mobileNumber": "465481547",
+    "homeTelephone": "34654684",
+    "email": "sreethanb@bakorg.com",
+    "personalEmail": "sree1234@gmail.com",
+    "maritalStatus": "UNMARRIED",
+    "spouseName": "",
+    "departmentId": 10,
+    "addresses": [
+      {
+        "houseNumber": "12345",
+        "street": "BHEL",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pinCode": "123456"
+      }
+    ]
+  },
+  {
+    "userName": "rajub",
+    "firstName": "Raju",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Ilaiah",
+    "motherName": "Kethamma",
+    "guardianName": "",
+    "role": "DELIVERY_MANAGER",
+    "salary": 70000,
+    "dob": "1985-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "123456789",
+    "homeTelephone": "986574123",
+    "email": "rajub@bakorg.com",
+    "personalEmail": "raju1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Mamatha",
+    "departmentId": 20,
+    "addresses": [
+      {
+        "houseNumber": "454",
+        "street": "YRP",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "506366"
+      }
+    ]
+  },
+  {
+    "userName": "mamathab",
+    "firstName": "Mamatha",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Komraiah",
+    "motherName": "",
+    "guardianName": "",
+    "role": "PRODUCT_MANAGER",
+    "salary": 80000,
+    "dob": "1986-01-01T00:00:00",
+    "gender": "FEMALE",
+    "mobileNumber": "4654687131",
+    "homeTelephone": "56546187",
+    "email": "mamathab@bakorg.com",
+    "personalEmail": "mamatha1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Raju",
+    "departmentId": 20,
+    "addresses": [
+      {
+        "houseNumber": "454",
+        "street": "YRP",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "506366"
+      }
+    ]
+  },
+  {
+    "userName": "jaswanthb",
+    "firstName": "Jaswanth",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Raju",
+    "motherName": "Mamatha",
+    "guardianName": "",
+    "role": "PRODUCT_MANAGER",
+    "salary": 80000,
+    "dob": "2010-04-24T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "54987961646",
+    "homeTelephone": "216498791",
+    "email": "jeswanthb@bakorg.com",
+    "personalEmail": "jessi1234@gmail.com",
+    "maritalStatus": "UNMARRIED",
+    "spouseName": "",
+    "departmentId": 20,
+    "addresses": [
+      {
+        "houseNumber": "454",
+        "street": "YRP",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "123456"
+      }
+    ]
+  },
+  {
+    "userName": "jashmithab",
+    "firstName": "Jashmitha",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Raju",
+    "motherName": "Mamatha",
+    "guardianName": "",
+    "role": "DELIVERY_MANAGER",
+    "salary": 70000,
+    "dob": "2007-06-01T00:00:00",
+    "gender": "FEMALE",
+    "mobileNumber": "546431679",
+    "homeTelephone": "16542065416",
+    "email": "jashmithab@bakorg.com",
+    "personalEmail": "jesmitha1234@gmail.com",
+    "maritalStatus": "UNMARRIED",
+    "spouseName": "",
+    "departmentId": 20,
+    "addresses": [
+      {
+        "houseNumber": "454",
+        "street": "YRP",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "123456"
+      }
+    ]
+  },
+  {
+    "userName": "vinayp",
+    "firstName": "Vinay",
+    "middleName": "",
+    "lastName": "Peddaboina",
+    "fatherName": "Rajaiah",
+    "motherName": "Bhagya",
+    "guardianName": "",
+    "role": "TECHNICAL_MANAGER",
+    "salary": 60000,
+    "dob": "1997-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "46546516",
+    "homeTelephone": "1564651",
+    "email": "vinayp@bakorg.com",
+    "personalEmail": "vin1234@gmail.com",
+    "maritalStatus": "UNMARRIED",
+    "spouseName": "",
+    "departmentId": 20,
+    "addresses": [
+      {
+        "houseNumber": "465164",
+        "street": "NRP",
+        "city": "Parkal",
+        "state": "Telangana",
+        "pinCode": "505456"
+      }
+    ]
+  },
+  {
+    "userName": "sampathm",
+    "firstName": "Sampath",
+    "middleName": "",
+    "lastName": "Meruga",
+    "fatherName": "Ilaiah",
+    "motherName": "",
+    "guardianName": "",
+    "role": "LEAD",
+    "salary": 40000,
+    "dob": "1990-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "64643216",
+    "homeTelephone": "326495465",
+    "email": "sampathm@bakorg.com",
+    "personalEmail": "samp1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Mounika",
+    "departmentId": 30,
+    "addresses": [
+      {
+        "houseNumber": "5456",
+        "street": "NRP",
+        "city": "Parkal",
+        "state": "Telangana",
+        "pinCode": "505456"
+      }
+    ]
+  },
+  {
+    "userName": "kishorn",
+    "firstName": "Kishor",
+    "middleName": "kishu",
+    "lastName": "Narni",
+    "fatherName": "",
+    "motherName": "",
+    "guardianName": "",
+    "role": "ACCOUNTANT",
+    "salary": 40000,
+    "dob": "1989-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "4646456532",
+    "homeTelephone": "65464216545",
+    "email": "kishun@bakorg.com",
+    "personalEmail": "narni1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Munni",
+    "departmentId": 30,
+    "addresses": [
+      {
+        "houseNumber": "65465",
+        "street": "palakollu",
+        "city": "WestGodavari",
+        "state": "AndhraPradesh",
+        "pinCode": "564655"
+      }
+    ]
+  },
+  {
+    "userName": "munnin",
+    "firstName": "Munni",
+    "middleName": "",
+    "lastName": "Narni",
+    "fatherName": "",
+    "motherName": "",
+    "guardianName": "",
+    "role": "ACCOUNTANT",
+    "salary": 30000,
+    "dob": "1995-01-01T00:00:00",
+    "gender": "FEMALE",
+    "mobileNumber": "646712",
+    "homeTelephone": "3146841",
+    "email": "munnin@bakorg.com",
+    "personalEmail": "munni1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Kishor",
+    "departmentId": 30,
+    "addresses": [
+      {
+        "houseNumber": "65465",
+        "street": "palakollu",
+        "city": "WestGodavari",
+        "state": "AndhraPradesh",
+        "pinCode": "564655"
+      }
+    ]
+  },
+  {
+    "userName": "srikanthg",
+    "firstName": "Srikanth",
+    "middleName": "",
+    "lastName": "Gajjelli",
+    "fatherName": "Ravindar",
+    "motherName": "",
+    "guardianName": "",
+    "role": "TECHNICAL_MANAGER",
+    "salary": 60000,
+    "dob": "1990-05-02T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "654984654684",
+    "homeTelephone": "2649516494",
+    "email": "srikanthg@bakorg.com",
+    "personalEmail": "siri1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "",
+    "departmentId": 30,
+    "addresses": [
+      {
+        "houseNumber": "654651",
+        "street": "BHEL",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pinCode": "518465"
+      }
+    ]
+  },
+  {
+    "userName": "kirank",
+    "firstName": "Kiran",
+    "middleName": "",
+    "lastName": "Kolani",
+    "fatherName": "",
+    "motherName": "",
+    "guardianName": "",
+    "role": "SCRUM_MASTER",
+    "salary": 50000,
+    "dob": "1992-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "66846515",
+    "homeTelephone": "3198465",
+    "email": "kirank@bakorg.com",
+    "personalEmail": "laddu1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "",
+    "departmentId": 30,
+    "addresses": [
+      {
+        "houseNumber": "69841",
+        "street": "Ramagundam",
+        "city": "Karimnagar",
+        "state": "Telangana",
+        "pinCode": "6465165"
+      }
+    ]
+  },
+  {
+    "userName": "nagarajuk",
+    "firstName": "Nagaraju",
+    "middleName": "",
+    "lastName": "Koosa",
+    "fatherName": "Chandramouli",
+    "motherName": "",
+    "guardianName": "",
+    "role": "SSE",
+    "salary": 25000,
+    "dob": "1993-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "64968465",
+    "homeTelephone": "614984",
+    "email": "nagarajuk@bakorg.com",
+    "personalEmail": "naga1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "",
+    "departmentId": 40,
+    "addresses": [
+      {
+        "houseNumber": "54694",
+        "street": "YRP",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "506366"
+      }
+    ]
+  },
+  {
+    "userName": "thirupathik",
+    "firstName": "Thirupathi",
+    "middleName": "",
+    "lastName": "Koosa",
+    "fatherName": "Rajireddy",
+    "motherName": "Payilamma",
+    "guardianName": "",
+    "role": "SE",
+    "salary": 20000,
+    "dob": "1994-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "65498743",
+    "homeTelephone": "264941321",
+    "email": "thirupathik@bakorg.com",
+    "personalEmail": "thiru1234@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "",
+    "departmentId": 40,
+    "addresses": [
+      {
+        "houseNumber": "54645",
+        "street": "YRP",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "506366"
+      }
+    ]
+  },
+  {
+    "userName": "uppalbalu",
+    "firstName": "balu",
+    "middleName": "",
+    "lastName": "Theda",
+    "fatherName": "AAA",
+    "motherName": "BBB",
+    "guardianName": "",
+    "role": "SG",
+    "salary": 15000,
+    "dob": "1985-01-01T00:00:00",
+    "gender": "TRANSGENDER",
+    "mobileNumber": "5645645",
+    "homeTelephone": "56456",
+    "email": "balu@bakorg.com",
+    "personalEmail": "uppalbalu@gmail.com",
+    "maritalStatus": "UNMARRIED",
+    "spouseName": "",
+    "departmentId": 50,
+    "addresses": [
+      {
+        "houseNumber": "53454",
+        "street": "Uppal",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pinCode": "456547"
+      }
+    ]
+  }
+]

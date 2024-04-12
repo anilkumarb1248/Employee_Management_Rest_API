@@ -1,0 +1,585 @@
+{
+	"info": {
+		"_postman_id": "7528692b-9d08-4f71-8b47-bcf18c6c7ccd",
+		"name": "Employee_Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31336676"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Curd Operations",
+					"item": [
+						{
+							"name": "Add Dummy Data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/data/dummy",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"data",
+										"dummy"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Employee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\": \"sureshd\",\r\n    \"firstName\": \"Suresh\",\r\n    \"middleName\": \"\",\r\n    \"lastName\": \"Diddi\",\r\n    \"fatherName\": \"\",\r\n    \"motherName\": \"\",\r\n    \"guardianName\": \"\",\r\n    \"role\": \"LEAD\",\r\n    \"salary\":\"40000\",\r\n    \"dob\": \"1990-06-19T00:00:00\",\r\n    \"gender\": \"MALE\",\r\n    \"mobileNumber\": \"4354354365\",\r\n    \"homeTelephone\": \"54654654654\",\r\n    \"email\": \"sureshd@bakorg.com\",\r\n    \"personalEmail\": \"suresh@gmail.com\",\r\n    \"maritalStatus\": \"MARRIED\",\r\n    \"spouseName\": \"Maheshwari\",\r\n    \"departmentId\": 30,\r\n    \"addresses\": [\r\n        {\r\n            \"houseNumber\": \"435443\",\r\n            \"street\": \"Indresham\",\r\n            \"city\": \"Hyderabad\",\r\n            \"state\": \"Telangana\",\r\n            \"pinCode\": \"123456\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Employee List",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"userName\": \"bikshum\",\r\n        \"firstName\": \"Bikshapathi\",\r\n        \"middleName\": \"\",\r\n        \"lastName\": \"Merugu\",\r\n        \"fatherName\": \"Ilaiah\",\r\n        \"motherName\": \"Komuravva\",\r\n        \"guardianName\": \"\",\r\n        \"role\": \"SE\",\r\n        \"salary\": \"30000\",\r\n        \"dob\": \"1985-01-01T00:00:00\",\r\n        \"gender\": \"MALE\",\r\n        \"mobileNumber\": \"6456546545\",\r\n        \"homeTelephone\": \"54654645\",\r\n        \"email\": \"bikshum@bakorg.com\",\r\n        \"personalEmail\": \"bikshapathi@gmail.com\",\r\n        \"maritalStatus\": \"MARRIED\",\r\n        \"spouseName\": \"Ms Bikshu\",\r\n        \"departmentId\": 40,\r\n        \"addresses\": [\r\n            {\r\n                \"houseNumber\": \"565465\",\r\n                \"street\": \"Narlapur\",\r\n                \"city\": \"Warangal\",\r\n                \"state\": \"Telangana\",\r\n                \"pinCode\": \"6455546\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"userName\": \"srinum\",\r\n        \"firstName\": \"Srinu\",\r\n        \"middleName\": \"\",\r\n        \"lastName\": \"Merugu\",\r\n        \"fatherName\": \"Odeyya\",\r\n        \"motherName\": \"\",\r\n        \"guardianName\": \"\",\r\n        \"role\": \"SE\",\r\n        \"salary\": \"30000\",\r\n        \"dob\": \"1987-01-01T00:00:00\",\r\n        \"gender\": \"MALE\",\r\n        \"mobileNumber\": \"546546546\",\r\n        \"homeTelephone\": \"45656565\",\r\n        \"email\": \"srinum@bakorg.com\",\r\n        \"personalEmail\": \"srinu@gmail.com\",\r\n        \"maritalStatus\": \"MARRIED\",\r\n        \"spouseName\": \"Ms Srinu\",\r\n        \"departmentId\": 30,\r\n        \"addresses\": [\r\n             {\r\n                \"houseNumber\": \"565465\",\r\n                \"street\": \"Narlapur\",\r\n                \"city\": \"Warangal\",\r\n                \"state\": \"Telangana\",\r\n                \"pinCode\": \"6455546\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"userName\": \"rajum\",\r\n        \"firstName\": \"Raju\",\r\n        \"middleName\": \"\",\r\n        \"lastName\": \"Merugu\",\r\n        \"fatherName\": \"Odeyya\",\r\n        \"motherName\": \"\",\r\n        \"guardianName\": \"\",\r\n        \"role\": \"SE\",\r\n        \"salary\": \"30000\",\r\n        \"dob\": \"1990-01-01T00:00:00\",\r\n        \"gender\": \"MALE\",\r\n        \"mobileNumber\": \"54654654\",\r\n        \"homeTelephone\": \"546546546\",\r\n        \"email\": \"rajum@bakorg.com\",\r\n        \"personalEmail\": \"ruju@gmail.com\",\r\n        \"maritalStatus\": \"MARRIED\",\r\n        \"spouseName\": \"Ms Raju\",\r\n        \"departmentId\": 30,\r\n        \"addresses\": [\r\n            {\r\n                \"houseNumber\": \"565465\",\r\n                \"street\": \"Narlapur\",\r\n                \"city\": \"Warangal\",\r\n                \"state\": \"Telangana\",\r\n                \"pinCode\": \"6455546\"\r\n            }\r\n        ]\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/list",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Employee",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n            \"empId\": 1,\r\n            \"userName\": \"ammab\",\r\n            \"firstName\": \"Kethamma\",\r\n            \"middleName\": \"\",\r\n            \"lastName\": \"Bandari\",\r\n            \"fatherName\": \"Yellaiah\",\r\n            \"motherName\": \"Odemma\",\r\n            \"guardianName\": \"Jaswanth\",\r\n            \"role\": \"CEO\",\r\n            \"salary\": 90000.0,\r\n            \"dob\": \"1970-01-01\",\r\n            \"gender\": \"FEMALE\",\r\n            \"mobileNumber\": \"123456789\",\r\n            \"homeTelephone\": \"986574123\",\r\n            \"email\": \"ammab@bakorg.com\",\r\n            \"personalEmail\": \"ammab@gmail.com\",\r\n            \"maritalStatus\": \"MARRIED\",\r\n            \"spouseName\": \"Iaiah\",\r\n            \"departmentId\": 10,\r\n            \"addresses\": [\r\n                {\r\n                    \"addressId\": 1,\r\n                    \"houseNumber\": \"4-54\",\r\n                    \"street\": \"Yellareddypally\",\r\n                    \"city\": \"Bhupalapelly\",\r\n                    \"state\": \"Telangana\",\r\n                    \"pinCode\": \"506366\"\r\n                }\r\n            ]\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Employee By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n            \"empId\": 1,\r\n            \"userName\": \"ammab\",\r\n            \"firstName\": \"Kethamma\",\r\n            \"middleName\": \"\",\r\n            \"lastName\": \"Bandari\",\r\n            \"fatherName\": \"Yellaiah\",\r\n            \"motherName\": \"Odemma\",\r\n            \"guardianName\": \"Jaswanth\",\r\n            \"role\": \"CEO\",\r\n            \"salary\": 90000.0,\r\n            \"dob\": \"1970-01-01\",\r\n            \"gender\": \"FEMALE\",\r\n            \"mobileNumber\": \"123456789\",\r\n            \"homeTelephone\": \"986574123\",\r\n            \"email\": \"ammab@bakorg.com\",\r\n            \"personalEmail\": \"ammab@gmail.com\",\r\n            \"maritalStatus\": \"MARRIED\",\r\n            \"spouseName\": \"Iaiah\",\r\n            \"departmentId\": 10,\r\n            \"addresses\": [\r\n                {\r\n                    \"addressId\": 1,\r\n                    \"houseNumber\": \"4-54\",\r\n                    \"street\": \"Yellareddypally\",\r\n                    \"city\": \"Bhupalapelly\",\r\n                    \"state\": \"Telangana\",\r\n                    \"pinCode\": \"506366\"\r\n                }\r\n            ]\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/8",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Employee By name",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n            \"empId\": 1,\r\n            \"userName\": \"ammab\",\r\n            \"firstName\": \"Kethamma\",\r\n            \"middleName\": \"\",\r\n            \"lastName\": \"Bandari\",\r\n            \"fatherName\": \"Yellaiah\",\r\n            \"motherName\": \"Odemma\",\r\n            \"guardianName\": \"Jaswanth\",\r\n            \"role\": \"CEO\",\r\n            \"salary\": 90000.0,\r\n            \"dob\": \"1970-01-01\",\r\n            \"gender\": \"FEMALE\",\r\n            \"mobileNumber\": \"123456789\",\r\n            \"homeTelephone\": \"986574123\",\r\n            \"email\": \"ammab@bakorg.com\",\r\n            \"personalEmail\": \"ammab@gmail.com\",\r\n            \"maritalStatus\": \"MARRIED\",\r\n            \"spouseName\": \"Iaiah\",\r\n            \"departmentId\": 10,\r\n            \"addresses\": [\r\n                {\r\n                    \"addressId\": 1,\r\n                    \"houseNumber\": \"4-54\",\r\n                    \"street\": \"Yellareddypally\",\r\n                    \"city\": \"Bhupalapelly\",\r\n                    \"state\": \"Telangana\",\r\n                    \"pinCode\": \"506366\"\r\n                }\r\n            ]\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/username?username=anilb",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"username"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "anilb"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete All",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n            \"empId\": 1,\r\n            \"userName\": \"ammab\",\r\n            \"firstName\": \"Kethamma\",\r\n            \"middleName\": \"\",\r\n            \"lastName\": \"Bandari\",\r\n            \"fatherName\": \"Yellaiah\",\r\n            \"motherName\": \"Odemma\",\r\n            \"guardianName\": \"Jaswanth\",\r\n            \"role\": \"CEO\",\r\n            \"salary\": 90000.0,\r\n            \"dob\": \"1970-01-01\",\r\n            \"gender\": \"FEMALE\",\r\n            \"mobileNumber\": \"123456789\",\r\n            \"homeTelephone\": \"986574123\",\r\n            \"email\": \"ammab@bakorg.com\",\r\n            \"personalEmail\": \"ammab@gmail.com\",\r\n            \"maritalStatus\": \"MARRIED\",\r\n            \"spouseName\": \"Iaiah\",\r\n            \"departmentId\": 10,\r\n            \"addresses\": [\r\n                {\r\n                    \"addressId\": 1,\r\n                    \"houseNumber\": \"4-54\",\r\n                    \"street\": \"Yellareddypally\",\r\n                    \"city\": \"Bhupalapelly\",\r\n                    \"state\": \"Telangana\",\r\n                    \"pinCode\": \"506366\"\r\n                }\r\n            ]\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/all",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Select Operations",
+					"item": [
+						{
+							"name": "Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/list",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get with pagination",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"pageNumber\":0,\r\n    \"pageSize\":20,\r\n    \"sortOrder\":\"ASC\",\r\n    \"sortingBy\":\"firstName\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/list/pagination",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"list",
+										"pagination"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get By Id 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/1",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get By Id 5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/5",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get By Username anilb",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/username?username=anilb",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"username"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "anilb"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get By Username hithikshab",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/username?username=hithikshab",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"username"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "hithikshab"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Failure Cases",
+					"item": [
+						{
+							"name": "pagination",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"pageNumber\":10,\r\n    \"pageSize\":20,\r\n    \"sortOrder\":\"ASC\",\r\n    \"sortingBy\":\"firstName\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/list/pagination",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"list",
+										"pagination"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get By Id 50",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/50",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"50"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get By Username dummy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/username?username=dummy",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"username"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "dummy"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get By Username Empty",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/username?username=",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"username"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Employee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\": \"jashmithab\",\r\n    \"firstName\": \"Jashmitha\",\r\n    \"middleName\": \"\",\r\n    \"lastName\": \"Bandari\",\r\n    \"fatherName\": \"Raju\",\r\n    \"motherName\": \"Mamatha\",\r\n    \"guardianName\": \"\",\r\n    \"role\": \"DELIVERY_MANAGER\",\r\n    \"salary\": 70000.0,\r\n    \"dob\": \"2007-06-01\",\r\n    \"gender\": \"FEMALE\",\r\n    \"mobileNumber\": \"546431679\",\r\n    \"homeTelephone\": \"16542065416\",\r\n    \"email\": \"jashmithab@bakorg.com\",\r\n    \"personalEmail\": \"jesmitha1234@gmail.com\",\r\n    \"maritalStatus\": \"UNMARRIED\",\r\n    \"spouseName\": \"\",\r\n    \"departmentId\": 20,\r\n    \"addresses\": [\r\n        {\r\n            \"addressId\": 9,\r\n            \"houseNumber\": \"454\",\r\n            \"street\": \"YRP\",\r\n            \"city\": \"Warangal\",\r\n            \"state\": \"Telangana\",\r\n            \"pinCode\": \"123456\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Employees list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/list",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Employee By name dummy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n            \"empId\": 1,\r\n            \"userName\": \"ammab\",\r\n            \"firstName\": \"Kethamma\",\r\n            \"middleName\": \"\",\r\n            \"lastName\": \"Bandari\",\r\n            \"fatherName\": \"Yellaiah\",\r\n            \"motherName\": \"Odemma\",\r\n            \"guardianName\": \"Jaswanth\",\r\n            \"role\": \"CEO\",\r\n            \"salary\": 90000.0,\r\n            \"dob\": \"1970-01-01\",\r\n            \"gender\": \"FEMALE\",\r\n            \"mobileNumber\": \"123456789\",\r\n            \"homeTelephone\": \"986574123\",\r\n            \"email\": \"ammab@bakorg.com\",\r\n            \"personalEmail\": \"ammab@gmail.com\",\r\n            \"maritalStatus\": \"MARRIED\",\r\n            \"spouseName\": \"Iaiah\",\r\n            \"departmentId\": 10,\r\n            \"addresses\": [\r\n                {\r\n                    \"addressId\": 1,\r\n                    \"houseNumber\": \"4-54\",\r\n                    \"street\": \"Yellareddypally\",\r\n                    \"city\": \"Bhupalapelly\",\r\n                    \"state\": \"Telangana\",\r\n                    \"pinCode\": \"506366\"\r\n                }\r\n            ]\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/username?username=anilb",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"username"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "anilb"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Employee By name Empty",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n            \"empId\": 1,\r\n            \"userName\": \"ammab\",\r\n            \"firstName\": \"Kethamma\",\r\n            \"middleName\": \"\",\r\n            \"lastName\": \"Bandari\",\r\n            \"fatherName\": \"Yellaiah\",\r\n            \"motherName\": \"Odemma\",\r\n            \"guardianName\": \"Jaswanth\",\r\n            \"role\": \"CEO\",\r\n            \"salary\": 90000.0,\r\n            \"dob\": \"1970-01-01\",\r\n            \"gender\": \"FEMALE\",\r\n            \"mobileNumber\": \"123456789\",\r\n            \"homeTelephone\": \"986574123\",\r\n            \"email\": \"ammab@bakorg.com\",\r\n            \"personalEmail\": \"ammab@gmail.com\",\r\n            \"maritalStatus\": \"MARRIED\",\r\n            \"spouseName\": \"Iaiah\",\r\n            \"departmentId\": 10,\r\n            \"addresses\": [\r\n                {\r\n                    \"addressId\": 1,\r\n                    \"houseNumber\": \"4-54\",\r\n                    \"street\": \"Yellareddypally\",\r\n                    \"city\": \"Bhupalapelly\",\r\n                    \"state\": \"Telangana\",\r\n                    \"pinCode\": \"506366\"\r\n                }\r\n            ]\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{EMPLOYEE_MANAGEMENT_URL}}/employee/username?username=",
+									"host": [
+										"{{EMPLOYEE_MANAGEMENT_URL}}"
+									],
+									"path": [
+										"employee",
+										"username"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "EMPLOYEE_MANAGEMENT_URL",
+			"value": "localhost:2025/EmployeeManagement",
+			"type": "string"
+		}
+	]
+}
