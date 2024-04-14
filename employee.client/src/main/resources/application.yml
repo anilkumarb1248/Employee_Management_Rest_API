@@ -1,0 +1,33 @@
+server:
+  port: 2026
+  servlet:
+    context-path: /EmployeeServiceClient
+
+logging:
+  file:
+    name: A:/Workspace/logs/employee-service-client.log
+  # traceID and spanId are predefined MDC keys - we want the logs to include them
+#  pattern:
+#    level: %5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
+
+spring:
+  application:
+    name: employee-service-client
+
+employee-service:
+  host: http://localhost:2025/EmployeeManagement
+  resource: /employee
+  endpoints:
+    insertDummyDataURL: ${employee-service.resource}/data/dummy
+    addEmployeeURL: ${employee-service.resource}
+    addEmployeesListURL: ${employee-service.resource}/list
+    updateEmployeeURL: ${employee-service.resource}
+
+    getAllURL: ${employee-service.resource}/list
+    getWithPaginationURL: ${employee-service.resource}/list/pagination
+    getByIdURL: ${employee-service.resource}/{employeeId}
+    getByUsernameURL: ${employee-service.resource}/username
+
+    deleteByIdURL: ${employee-service.resource}/{employeeId}
+    deleteByUsernameURL: ${employee-service.resource}/username
+    deleteAllURL: ${employee-service.resource}/all

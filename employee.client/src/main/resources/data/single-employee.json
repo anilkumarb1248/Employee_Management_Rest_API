@@ -1,0 +1,31 @@
+[
+  {
+    "userName": "sureshd",
+    "firstName": "Suresh",
+    "middleName": "",
+    "lastName": "Diddi",
+    "fatherName": "",
+    "motherName": "",
+    "guardianName": "",
+    "role": "LEAD",
+    "salary":"40000",
+    "dob": "1990-06-19T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "4354354365",
+    "homeTelephone": "54654654654",
+    "email": "sureshd@bakorg.com",
+    "personalEmail": "suresh@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Maheshwari",
+    "departmentId": 30,
+    "addresses": [
+      {
+        "houseNumber": "435443",
+        "street": "Indresham",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pinCode": "123456"
+      }
+    ]
+  }
+]

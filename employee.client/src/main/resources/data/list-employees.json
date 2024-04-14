@@ -1,0 +1,89 @@
+[
+  {
+    "userName": "bikshum",
+    "firstName": "Bikshapathi",
+    "middleName": "",
+    "lastName": "Merugu",
+    "fatherName": "Ilaiah",
+    "motherName": "Komuravva",
+    "guardianName": "",
+    "role": "SE",
+    "salary": "30000",
+    "dob": "1985-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "6456546545",
+    "homeTelephone": "54654645",
+    "email": "bikshum@bakorg.com",
+    "personalEmail": "bikshapathi@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Ms Bikshu",
+    "departmentId": 40,
+    "addresses": [
+      {
+        "houseNumber": "565465",
+        "street": "Narlapur",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "6455546"
+      }
+    ]
+  },
+  {
+    "userName": "srinum",
+    "firstName": "Srinu",
+    "middleName": "",
+    "lastName": "Merugu",
+    "fatherName": "Odeyya",
+    "motherName": "",
+    "guardianName": "",
+    "role": "SE",
+    "salary": "30000",
+    "dob": "1987-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "546546546",
+    "homeTelephone": "45656565",
+    "email": "srinum@bakorg.com",
+    "personalEmail": "srinu@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Ms Srinu",
+    "departmentId": 30,
+    "addresses": [
+      {
+        "houseNumber": "565465",
+        "street": "Narlapur",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "6455546"
+      }
+    ]
+  },
+  {
+    "userName": "rajum",
+    "firstName": "Raju",
+    "middleName": "",
+    "lastName": "Merugu",
+    "fatherName": "Odeyya",
+    "motherName": "",
+    "guardianName": "",
+    "role": "SE",
+    "salary": "30000",
+    "dob": "1990-01-01T00:00:00",
+    "gender": "MALE",
+    "mobileNumber": "54654654",
+    "homeTelephone": "546546546",
+    "email": "rajum@bakorg.com",
+    "personalEmail": "ruju@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Ms Raju",
+    "departmentId": 30,
+    "addresses": [
+      {
+        "houseNumber": "565465",
+        "street": "Narlapur",
+        "city": "Warangal",
+        "state": "Telangana",
+        "pinCode": "6455546"
+      }
+    ]
+  }
+]

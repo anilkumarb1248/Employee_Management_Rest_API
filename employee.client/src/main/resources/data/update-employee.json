@@ -1,0 +1,33 @@
+[
+  {
+    "empId": 1,
+    "userName": "ammab",
+    "firstName": "Kethamma",
+    "middleName": "",
+    "lastName": "Bandari",
+    "fatherName": "Yellaiah",
+    "motherName": "Odemma",
+    "guardianName": "Jaswanth",
+    "role": "CEO",
+    "salary": 90000.0,
+    "dob": "1970-01-01",
+    "gender": "FEMALE",
+    "mobileNumber": "123456789",
+    "homeTelephone": "986574123",
+    "email": "ammab@bakorg.com",
+    "personalEmail": "ammab@gmail.com",
+    "maritalStatus": "MARRIED",
+    "spouseName": "Iaiah",
+    "departmentId": 10,
+    "addresses": [
+      {
+        "addressId": 1,
+        "houseNumber": "4-54",
+        "street": "Yellareddypally",
+        "city": "Bhupalapelly",
+        "state": "Telangana",
+        "pinCode": "506366"
+      }
+    ]
+  }
+]
