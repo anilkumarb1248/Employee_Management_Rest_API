@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="APPLICATION_NAME" value="employee-management"/>
+    <property name="LOG_PATH" value="A:/Workspace/logs/employee"/>
+    <property name="LOG_ARCHIVE" value="${LOG_PATH}/archive"/>
+
+    <timestamp key="timestamp-by-second" datePattern="yyyy-MM-dd'T'HH-mm-ss"/>
+
+    <property name="MAX_FILE_SIZE" value="${MAX_FILE_SIZE:-10MB}"/>
+
+    <appender name="Console-Appender" class="ch.qos.logback.core.ConsoleAppender">
+        <!--        <encoder class="ch.qos.logback.classic.encoder.JsonEncoder"/>-->
+        <encoder>
+            <pattern>
+                <!-- %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n -->
+                %blue(%d{yyyy-MM-dd HH:mm:ss.SSS}) %magenta([%thread]) %highlight(%-5level) %yellow(%logger{36}.%M) -
+                %green(%msg%n)
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!--    <appender name="File-Appender" class="ch.qos.logback.core.FileAppender">-->
+    <!--        <file>${LOG_PATH}/${APPLICATION_NAME}-logging-${timestamp-by-second}.log</file>-->
+    <!--        <encoder>-->
+    <!--            <pattern>-->
+    <!--                %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n-->
+    <!--            </pattern>-->
+    <!--        </encoder>-->
+    <!--    </appender>-->
+
+    <!--    <appender name="Rolling-File-Appender" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+    <!--        <file>${LOG_PATH}/${APPLICATION_NAME}-logging-${timestamp-by-second}.log</file>-->
+    <!--        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">-->
+    <!--            <fileNamePattern>${LOG_ARCHIVE}/${APPLICATION_NAME}-rollingfile.%d{yyyy-MM-dd}.%i.log</fileNamePattern>-->
+    <!--            <maxFileSize>10KB</maxFileSize>-->
+    <!--            <maxHistory>30</maxHistory>-->
+    <!--        </rollingPolicy>-->
+    <!--        <encoder>-->
+    <!--            <pattern>-->
+    <!--                %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n-->
+    <!--            </pattern>-->
+    <!--        </encoder>-->
+    <!--    </appender>-->
+
+    <appender name="FILE-OUT-JSON" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/${APPLICATION_NAME}-logging-${timestamp-by-second}.json</file>
+        <!--        <append>true</append>-->
+        <!--        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">-->
+        <!--            <fileNamePattern>${LOG_ARCHIVE}/${APPLICATION_NAME}-rollingfile.%d{yyyy-MM-dd}.json.%i</fileNamePattern>-->
+        <!--            <minIndex>1</minIndex>-->
+        <!--            <maxIndex>20</maxIndex>-->
+        <!--        </rollingPolicy>-->
+        <!--        <triggerringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">-->
+        <!--            <maxFileSize>10KB</maxFileSize>-->
+        <!--        </triggerringPolicy>-->
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_ARCHIVE}/${APPLICATION_NAME}-rollingfile.%d{yyyy-MM-dd}.json.%i</fileNamePattern>
+            <maxFileSize>10KB</maxFileSize>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <pattern>
+                    <pattern>
+                        {
+                        "timestamp": "%date{yyyy-MM-dd HH:mm:ss.SSS}",
+                        "service":"${APPLICATION_NAME}",
+                        "severity":"%level",
+                        "traceId":"%X{traceId}",
+                        "spanId":"%X{spanId}",
+                        "threadName":"%thread",
+                        "loggerName":"%logger{36}",
+                        "msg":"%message",
+                        "exception":"%exception"
+                        }
+                    </pattern>
+                </pattern>
+            </providers>
+
+<!--            <providers>-->
+<!--                <timestamp/>-->
+<!--                <pattern>-->
+<!--                    <pattern>-->
+<!--                        { "serviceName": "${APPLICATION_NAME}" }-->
+<!--                    </pattern>-->
+<!--                </pattern>-->
+<!--                <mdc/>-->
+<!--                <context/>-->
+<!--                <logLevel/>-->
+<!--                <loggerName/>-->
+<!--                <threadName/>-->
+<!--                <message/>-->
+<!--                <tags/>-->
+<!--                <logstashMarkers/>-->
+<!--                <arguments/>-->
+<!--                <stackTrace/>-->
+<!--                &lt;!&ndash;                <stackTrace>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <maxDepthPerThrowable>30</maxDepthPerThrowable>&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <maxLength>2048</maxLength>&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <rootCauseFirst>true</rootCauseFirst>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    </throwableConverter>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </stackTrace>&ndash;&gt;-->
+<!--            </providers>-->
+        </encoder>
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="Console-Appender"/>
+        <!--        <appender-ref ref="File-Appender" />-->
+        <!--        <appender-ref ref="Rolling-File-Appender" />-->
+        <appender-ref ref="FILE-OUT-JSON"/>
+    </root>
+
+</configuration>

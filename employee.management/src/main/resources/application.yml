@@ -5,12 +5,14 @@ server:
   error:
     path: /error
 
-logging:
-  file:
-    name: A:/Workspace/logs/employee-management.log
-  # traceID and spanId are predefined MDC keys - we want the logs to include them
-#  pattern:
-#    level: %5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
+  output:
+    ansi:
+      enabled: always
+
+# We don't require this configuration as we are using logback xml configuration.
+#logging:
+#  file:
+#    name: A:/Workspace/logs/employee-management.log
 
 spring:
   application:
@@ -26,6 +28,8 @@ spring:
     password: employee
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+#    WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly
+#    using 'hibernate.dialect' (remove the property setting and it will be selected by default)
   h2:
     console:
       enabled: true

@@ -244,7 +244,7 @@ public class EmployeeController {
         CustomResponse customResponse = new CustomResponse();
         boolean flag = employeeService.addDummyData();
         if (flag) {
-            LOGGER.info("Successfully add the dummy employees");
+            LOGGER.info("Successfully added the dummy employees");
             customResponse.setStatus(Status.SUCCESS);
             customResponse.setStatusResponse(CommonUtil.createStatusResponse(HttpStatus.OK, "Dummy Employees inserted successfully"));
             return ResponseEntity.ok(customResponse);
