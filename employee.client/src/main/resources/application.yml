@@ -2,13 +2,10 @@ server:
   port: 2026
   servlet:
     context-path: /EmployeeServiceClient
-
-logging:
-  file:
-    name: A:/Workspace/logs/employee-service-client.log
-  # traceID and spanId are predefined MDC keys - we want the logs to include them
-#  pattern:
-#    level: %5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
+# We don't require this configuration as we are using logback xml configuration.
+#logging:
+#  file:
+#    name: A:/Workspace/logs/employee-service-client.log
 
 spring:
   application:
